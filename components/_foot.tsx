@@ -1,5 +1,5 @@
 import Script from "next/script";
-export default () => (
+const Footer: React.FC = () => (
   <footer>
     <Script
       type="module"
@@ -8,3 +8,5 @@ export default () => (
     <Script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></Script>
   </footer>
 );
+
+export default Footer;

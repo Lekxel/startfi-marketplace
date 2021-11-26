@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Item, ItemsContainer } from "..";
 import range from "../../helpers/range";
 
-export default () => {
+const Shoe: React.FC = () => {
   const router = useRouter();
   const { id } = router?.query;
   return (
@@ -23,6 +23,8 @@ export default () => {
   );
 };
 
+export default Shoe;
+
 interface ItemDetailsProps {
   id: any;
 }
@@ -33,8 +35,8 @@ const ItemDetails: React.FC<ItemDetailsProps> = ({ id }) => (
         Nike Air Shoe 270 for John Doe
       </h2>
       <p className="text-gray-500 text-sm my-5">
-        Nike's Air Shoe is one of the most popular shoes out there for people
-        like you to try out.
+        Nike&apos;s Air Shoe is one of the most popular shoes out there for
+        people like you to try out.
       </p>
 
       <div className="flex">
